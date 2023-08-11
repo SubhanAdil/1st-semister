@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculater</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+                header{
+                    background-color: darkgoldenrod;
+                    width: 100%;
+                    
+                    padding: 20PX;
+
+                }
+.container{
+    border: solid 4px black;
+    text-align: center;
+    margin-top: 15%;
+    width: 25%;
+    margin-left: 40%;
+    border-radius: 9px;
+    background-color: black;
+}
+table{
+    margin: auto;
+}
+input{
+    border-radius: 10px;
+    font-size: 34px;
+    margin: 16px;
+}
+button{
+    border: solid 2px black;
+    border-radius: 9px;
+    font-size: 23px;
+    width: 70px;
+    height: 40px;
+    
+
+}
+.calculator{
+    display: inline-block;
+    border: 9px;
+    background-color: aqua;
+}
+.container input{
+    width: 90%;
+}
+    </style>
+</head>
+<body>
+    <header><h1>CALCULATER</h1></header>
+    <div class="container">
+       <input type="text" name="screen" id="screen">
+       <div class="calculator"> 
+      <table>
+        <tr>
+         <td><button>(</button></td>
+          <td><button>)</button></td>
+          <td><button>C</button></td>
+         <td><button>%</button></td>
+         </tr>
+         <tr>
+            <td><button>9</button></td>
+             <td><button>8</button></td>
+             <td><button>7</button></td>
+            <td><button>6</button></td>
+           </tr>
+           <tr>
+            <td><button>5</button></td>
+             <td><button>4</button></td>
+             <td><button>3</button></td>
+            <td><button>2</button></td>
+           </tr>
+           <tr>
+            <td><button>1</button></td>
+             <td><button>0</button></td>
+             <td><button>/</button></td>
+            <td><button>x</button></td>
+           </tr>
+           <tr>
+            <td><button>-</button></td>
+             <td><button>+</button></td>
+             <td><button>^</button></td>
+            <td><button>=</button></td>
+           </tr>
+      </table>
+    </div>
+    <script>
+        let screen=document.getElementById('screen');
+        buttons=document.querySelectorAll('button');
+        let screenvalue='';
+for(item of buttons){
+    item.addEventListener('click',(e)=>{
+        buttontext=e.target.innerHTML
+        console.log('button text is',buttontext)
+        if(buttontext == 'x'){
+            buttontext='*';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '9'){
+            buttontext='9';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+        }
+        else if(buttontext == '8'){
+            buttontext='8';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+        }
+        else if(buttontext == '7'){
+            buttontext='7';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '6'){
+            buttontext='6';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '5'){
+            buttontext='5';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '4'){
+            buttontext='4';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '3'){
+            buttontext='3';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '2'){
+            buttontext='2';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '1'){
+            buttontext='1';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '0'){
+            buttontext='0';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '/'){
+            buttontext='/';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '-'){
+            buttontext='-';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '+'){
+            buttontext='+';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == '('){
+            buttontext='(';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext == ')'){
+            buttontext=')';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else if(buttontext== '='){
+            screen.value=eval(screenvalue)
+        }
+        else if(buttontext == 'C'){
+            screenvalue="";
+            screen.value =screenvalue;
+        }
+        else if(buttontext == '%'){
+            buttontext='%';
+            screenvalue +=buttontext;
+            screen.value=screenvalue;
+            
+        }
+        else{
+            screenvalue +=buttontext;
+            scrren.value = screenvalue;
+        }
+        
+    })
+}
+
+    </script>
+</body>
+</html>

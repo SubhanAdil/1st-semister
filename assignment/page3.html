@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PAGE 3</title>
+    <style>
+        .logo{
+    width: 2%;
+    height: 10%;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 2px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-image: url(blueeeeee.jpg);  
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 5px;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+    padding-right: 5px 100px  100px;
+    background-color: rgb(113, 196, 235);
+    border-radius: 25%;
+    padding: 1px;  
+}
+nav ul li a:hover{
+    color: #ff4321;
+}
+      h1{
+    text-align: center;
+    text-decoration: underline;
+    background-color: beige;
+}
+h3{
+    text-align: center;
+    background-color: rgb(228, 174, 93);
+}
+.number{
+    width: 40%;
+    height: 30px;
+    background-color: rgb(138, 204, 241);
+    border: 2px solid rgb(210, 211, 162);
+    border-radius: 6PX;
+}
+.address{
+    width: 300px;
+    height: 5pc;
+    background-color: rgb(138, 204, 241);
+    border: 2px solid rgb(210, 211, 162);
+    border-radius: 6PX;
+}
+input[type="text"]
+input[type="tel"],
+input[type="name"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea
+{
+    width: 400px;
+    height: 2pc;
+    background-color: rgb(138, 204, 241);
+    border: 2px solid rgb(210, 211, 162);
+    border-radius: 6PX;
+    padding: 3px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: gainsboro;
+    margin: 25px 25px;
+    border-radius: 5px;   
+}
+input[type="submit"]{
+    background-color: darkkhaki;
+    border: none;
+    padding:12px;
+    width: 10pc;
+}
+input[type="submit"]:hover{
+    background-color: greenyellow;
+}
+    </style>
+</head>
+<nav>
+    <img src="../subhan pics/sub5.jpg" class="logo">
+    <ul>
+        <li><a href="subhan.html"><b>Home</b></a></li>
+        <li><a href="page2.html"><b>GALLERY</b></a></li>
+        <li><a href="page3.html"><b>CONTACT ME</b></a></li>
+        <li><a href="page44.html"><b>BACKGROUND</b></a></li>
+        <li class="last"><a href="page5.html" ><b>VISION</b></a></li>
+    </ul>
+</nav  >
+<body>
+    <form>
+    <h1>CONTECT FORM</h1>
+    <h3> Please fill all the texts in the field</h3>
+    <p>YOUR NAME: <input type="name" name="name" required></p>
+    <p>YOUR NUMBER: <input type="tel" name="number" id="number" class="number"></p>
+   <Select required>
+           <option value="">select your city</option>     
+           <option value="karachi">KARACHI</option>
+           <option value="LAHORE">LAHORE</option>
+           <option value="ISLAMABAD">ISLAMABAD</option>
+   </Select>
+   <p>ADDRESS: <input type="text" name="address" id="address" required class="address"></p>
+   <p>YOUR EMAIL: <input type="email" name="email" id="email" required></p>
+   <p>YOUR PASSWORD: <input type="password" name="password" id="password" required ></p>
+  <input type="submit" value="SEND INFORMATION">
+    </form>  
+</body>
+</html>

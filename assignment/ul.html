@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Drop Down Navigation</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .containers {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 150px;
+            background-color: #C00;
+        }
+
+        nav {
+            height: 50px;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            display: block;
+            height: 50px;
+            width: 192px;
+            line-height: 50px;
+        }
+
+        nav ul a:hover {
+            background-color: #C00;
+        }
+
+        nav ul li:hover>ul {
+            visibility: visible;
+        }
+
+        nav ul ul {
+            position: absolute;
+            background-color: #333;
+            visibility: hidden;
+        }
+
+        nav ul ul ul {
+            margin-left: 192px;
+            margin-top: -50px;
+        }
+
+        nav ul ul li {
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Products</a>
+                    <ul>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a>
+                            <ul>
+                                <li><a href="#">Product 1</a></li>
+                                <li><a href="#">Product 2</a>
+                                    <ul>
+                                        <li><a href="#">Product 1</a></li>
+                                        <li><a href="#">Product 2</a></li>
+                                        <li><a href="#">Product 3</a>
+                                </li>
+                            </ul>
+                </li>
+            </ul>
+            <li><a href="#">Product 3</a></li>
+            </li>
+            </ul>
+            <li><a href="#">Product 3</a></li>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Clients</a></li>
+            <li></li><a href="#">Contact us</a></li>
+        </nav>
+    </div>
+</body>
+
+</html>

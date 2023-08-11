@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pk 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(138, 135, 135);
+        }
+
+        /* NAV BAR*/
+
+        .sign a {
+            background-color: rgb(199, 128, 36);
+            color: white;
+            font-size: 15px;
+            border: 2px solid rgb(146, 140, 140);
+            border-radius: 10%;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        ul {
+            background-color: black;
+            padding: 10px;
+        }
+
+        .ptag {
+            margin-right: 75%;
+            color: orange;
+            font-weight: 750;
+            font-size: x-large;
+        }
+
+        .nav-item a {
+            color: orange;
+            font-size: 20px;
+        }
+
+        .nav-item .aa {
+            color: white;
+            font-size: 20px;
+        }
+
+        .image {
+            width: 70px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .secimg {
+            width: 100%;
+
+        }
+
+        /*hover ul*/
+        .newone ul li a {
+            color: orange;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+        }
+
+        .newul {
+            position: absolute;
+            background-color: black;
+            visibility: hidden;
+        }
+
+        .newone:hover>.newul {
+            visibility: visible;
+
+        }
+
+        /*hover 2*/
+        .newone ul li ul li a {
+            color: orange;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+        }
+
+        .newul {
+            position: absolute;
+            background-color: black;
+            visibility: hidden;
+        }
+
+        .click3:hover>.newul {
+            visibility: visible;
+            margin-left: 30px;
+            list-style: none;
+        }
+
+        /*end nav*/
+/*divs*/
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+        margin-top: 50px;
+        
+}
+.main :hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+        /*register*/
+        .register {
+            margin-top: 5%;
+            text-align: center;
+            width: 100%;
+            height: 450px;
+            background-image: url(https://www.shutterstock.com/image-photo/texture-dark-concrete-floor-mist-260nw-513032461.jpg);
+            background-size: cover;
+        }
+
+        .register p {
+            color: aliceblue;
+            font-size: large;
+        }
+
+        .register input {
+            background-color: rgb(199, 151, 80);
+            border-radius: 20%;
+        }
+
+        .regimg {
+            width: 15%;
+            margin-top: 15px;
+
+
+        }
+
+        /*footer*/
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar-->
+    <ul class="nav justify-content-end ul">
+        <div class="sign">
+            <a href="login.html">Login</a>/
+            <a href="signUp.html">SignUp</a>
+        </div>
+        <p class="ptag"> <img class="image"
+                src="https://e7.pngegg.com/pngimages/232/1010/png-clipart-sporting-goods-graphy-dumbbell-icon-text-hand.png"
+                alt="">GYM FITNESS SITE</p>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="webhome.html">Home</a>
+        </li>
+        <li class="nav-item newone">
+            <a class="nav-link newtwo" href="packages.html">Packages</a>
+            <ul class="newul">
+                <li class="nav-item"><a class="nav-link" href="pk1.html">Package 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="pk2.html">Package 2</a></li>
+                <li class="nav-item click3"><a class="nav-link" href="pk3.html">Package 3</a>
+                    <ul class="newul">
+                        <li class="nav-item"><a class="nav-link" href="pk4.html">Package 4</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pk5.html">Package 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item newone">
+            <a class="nav-link newtwo" href="">Suppliments</a>
+            <ul class="newul">
+                <li class="nav-item"><a class="nav-link" href="protein.html">Proteins</a></li>
+                <li class="nav-item"><a class="nav-link" href="preWorkOut.html">PreWorkout </a></li>
+                <li class="nav-item click3"><a class="nav-link" href="massGainer.html">Mass Gainer</a> </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Training</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="facilities.html">Facilities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact Us</a>
+        </li>
+    </ul>
+    <!-- end-->
+
+
+
+    <div>
+        <img style="width: 100%;height: 65vh;" class="main_img"
+            src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/06/man-trainer.jpg?quality=82&strip=1" alt=""
+            srcset="">
+    </div>
+    <h1 style="text-align: center;background-color: coral;padding: 15px;">Best Trainers</h1>
+    <div class="main">
+        <div class="card" style="width: 18rem;">
+            <img src="gym pics/butt.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">BOXING COACH</h5>
+
+                <p class="card-text"> <b>MUTLIB BUTT </b>Boxing Coach
+                    Get Medal in worldwide championship</p>
+                    <p>INSTAGRAM:  mutlib_butt</p>
+                <div style="display: flex;"> 
+                    <a href="#" id="btn" class="btn btn-warning">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="gym pics/IMG_7095.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">GYMING TRAINER</h5>
+
+                <p class="card-text"><b>SUBHAN ADIL</b>Best trainer for good exercises.
+                    
+                    He make their clints happy with his efforts.</p>
+                    <p>INSTAGRAM:  subhan793</p>
+                <div style="display: flex;">
+                    <a href="#" id="btn" class="btn btn-warning ">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="gym pics/hamza.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CARDIO TRAINER</h5>
+
+                <p class="card-text"><b>HAMZA BIN FEROZ</b>He is expert in Cardio. 
+                    He know every single excercise for Cardio</p>
+                <div style="display: flex;">
+                    <a href="#" id="btn" class="btn btn-warning">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--register-->
+
+    <div class="register">
+        <img class="regimg" src="https://www.di-chi.org/wp-content/uploads/2018/08/Register-Now-NYSCATE.png" alt="">
+        <div style="display: flex;padding-left: 250px; padding-top: 30px;">
+            <p>First Name:<input type="name" name="name" required> </p>
+
+            <p style="padding-left:150px;">Last Name:<input type="name" name="name" required> </p>
+        </div>
+        <div style="display: flex;padding-left: 250px;margin: 50px; ">
+            <p>ADDRESS: <input name="address" id="address" cols="30" rows="1"></input></p>
+            <p style="padding-left:150px;">EMAIL: <input type="email" name="email" id="email" required></p>
+        </div>
+        <div>
+            <p>Number: <input type="number" name="email" id="email" required></p>
+
+        </div>
+        <button style="width: 100px;border-radius: 40%;background-color: rgb(51, 113, 172);padding: 5px;"><a href=""
+                style="color:white;text-decoration: none;">SUBMIT</a></button>
+    </div>
+    <footer>
+        <h5>Fitness Site</h5>
+        <p>Contact : 0344345556</p>
+        <P>Instagram :subhan793</P>
+        <p>GYM Timing 06:00 AM To 12:00 PM</p>
+    </footer>
+</body>
+
+</html>
